@@ -3,302 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Rahul Anna</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #282c34;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: 'Arial', sans-serif;
-    }
-
-    #birthdayContainer {
-      text-align: center;
-      color: #fff;
-      animation: fadeIn 3s ease-in-out;
-    }
-
-    h1, h2, h3 {
-      margin: 0;
-      padding: 0;
-      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
-    }
-
-    h1 {
-      font-size: 8vw;
-      color: #ffcc00;
-      animation: pulse 2s infinite;
-    }
-
-    h2 {
-      font-size: 5vw;
-      padding-top: 10px;
-      color: #ff6699;
-      animation: slideIn 3s ease-out;
-    }
-  
-    h3 {
-      font-size: 5vw;
-      padding-top: 10px;
-      color: #ff6699;
-      animation: slideIn 3s ease-out;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    #wishMessage {
-      font-size: 6vw;
-      color: #ff6699;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      display: none;
-    }
-
-    #backgroundImage {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none;
-      z-index: -1;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: scale(0.5);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Rajalakshmi</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #282c34;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: 'Arial', sans-serif;
-    }
-
-    #birthdayContainer {
-      text-align: center;
-      color: #fff;
-      animation: fadeIn 3s ease-in-out;
-    }
-
-    h1, h2, h3 {
-      margin: 0;
-      padding: 0;
-      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
-    }
-
-    h1 {
-      font-size: 8vw;
-      color: #ffcc00;
-      animation: pulse 2s infinite;
-    }
-
-    h2 {
-      font-size: 5vw;
-      padding-top: 10px;
-      color: #ff6699;
-      animation: slideIn 3s ease-out;
-    }
-  
-    h3 {
-      font-size: 5vw;
-      padding-top: 10px;
-      color: #ff6699;
-      animation: slideIn 3s ease-out;
-    }
-
-    .hidden {
-      display: none;
-    }
-
-    #wishMessage {
-      font-size: 6vw;
-      color: #ff6699;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      display: none;
-    }
-
-    #backgroundImage {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: none;
-      z-index: -1;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: scale(0.5);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.1);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
-
-    @keyframes slideIn {
-      0% {
-        transform: translateY(50px);
-        opacity: 0;
-      }
-      100% {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    /* Falling Emoji Hearts */
-    .heart {
-      position: fixed;
-      font-size: 4vw;
-      top: -20px;
-      animation: fall linear infinite;
-      opacity: 0.8;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(100vh) rotate(360deg);
-      }
-    }
-
-    /* Heart-shaped flower growth */
-    .flower {
-      position: absolute;
-      width: 5vw;
-      height: 5vw;
-      background-color: red;
-      clip-path: polygon(50% 0%, 61% 18%, 80% 18%, 100% 38%, 100% 58%, 50% 100%, 0% 58%, 0% 38%, 20% 18%, 39% 18%);
-      animation: growFlower 5s ease forwards;
-      opacity: 0;
-    }
-
-    @keyframes growFlower {
-      0% {
-        opacity: 0;
-        transform: scale(0) translateY(0);
-      }
-      50% {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-      }
-      100% {
-        transform: scale(1.5) translateY(-200px);
-      }
-    }
-
-    #flowerContainer {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    /* Video Container (Hidden Initially) */
-    #videoContainer {
-      width: 100%;
-      height: 100%;
-      display: none;
-      justify-content: center;
-      align-items: center;
-      background-color: #000;
-    }
-
-    video {
-      max-width: 100%;
-      max-height: 100%;
-      outline: none;
-    }
-
-    /* Goodbye message */
-    #goodbyeMessage {
-      font-size: 8vw;
-      color: #ff6699;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      display: none;
-    }
-
-  </style>
-</head>
-<body>
-
-<div id="birthdayContainer">
-  <h1 id="birthdayTitle">Many More Happy Returns of the Day PRINCESS</h1>  
-  <h2 id="birthdayMessage">Hey</h2>
-  <h3 id="birthdayPrompt">If you read this, please touch the screen</h3>
-</div>
-
-<div id="wishMessage">I wish you live long, be happy forever, and live your life as you like it. If you read my wishes, please touch the screen twice.</div>
-
-<div id="flowerContainer"></div>
-
-<!-- Video Section (Hidden Initially) -->
-<div id="videoContainer">
-  <video autoplay loop muted>
-    <source src="your-video-file.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday Rahul Anna</title>
+  <title>Happy Birthday Akka</title>
   <style>
     body {
       margin: 0;
@@ -315,27 +20,28 @@
     }
 
     #timerContainer {
-      color:color(from color srgb r g b);
+      color:blue;
+      color:pink;
       margin-bottom: 2vh;
-      font-size: 4.5vw; /* Increased for better scaling */
-      text-shadow: 7px 2px 10px rgba(255, 255, 255, 0.8);
+      font-size: 4.5vw; 
+      text-shadow: 1px 1px 1px rgba(255, 255, 255);
     }
 
     #timerMessage {
-      font-size: 3vw; /* Responsive font size */
+      font-size: 3vw; 
       color: #fff;
       margin-bottom: 2vh;
     }
 
     #birthdayContainer {
-      color: #fff;
-      animation: fadeIn 3s ease-in-out;
+      color: blue;
+      animation:  fadeIn 3s ease-in-out;
     }
 
     h1, h2, h3 {
       margin: 0;
       padding: 0;
-      text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.8);
+      text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.8);
     }
 
     h1 {
@@ -347,7 +53,7 @@
     h2, h3 {
       font-size: 5vw;
       padding-top: 2vh;
-      color: #ff6699;
+      color: green;
       animation: slideIn 3s ease-out;
     }
 
@@ -370,6 +76,27 @@
       position: absolute;
       top: 0;
       left: 0;
+      width: 70%;
+      height: 70%;
+      object-fit: cover;
+      display: none;
+      z-index: -1;
+    }
+    #loveheart {
+      font-size: 6vw;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+      text-align: center;
+      display: none;
+    }
+
+    #backgroundImage {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -377,7 +104,6 @@
       z-index: -1;
     }
 
-    /* Animations */
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -412,7 +138,6 @@
       }
     }
 
-    /* Falling Emoji Hearts */
     .heart {
       position: fixed;
       font-size: 4vw;
@@ -426,26 +151,7 @@
         transform: translateY(100vh) rotate(360deg);
       }
     }
-
-    /* Heart-shaped flower growth */
-    .flower {
-      position: absolute;
-      width: 5vw;
-      height: 5vw;
-      background-color: red;
-      clip-path: polygon(50% 0%, 61% 18%, 80% 18%, 100% 38%, 100% 58%, 50% 100%, 0% 58%, 0% 38%, 20% 18%, 39% 18%);
-      animation: growFlower 5s ease forwards;
-      opacity: 0;
-    }
-
-    #flowerContainer {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    /* Video Container (Hidden Initially) */
+    
     #videoContainer {
       width: 100%;
       height: 100%;
@@ -473,7 +179,7 @@
       display: none;
     }
 
-    /* Media Queries for Smaller Screens */
+   
     @media (max-width: 768px) {
       #timerContainer {
         font-size: 5vw;
@@ -496,7 +202,6 @@
       }
     }
 
-    /* Larger screens */
     @media (min-width: 1200px) {
       h1 {
         font-size: 6vw;
@@ -509,26 +214,31 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<!-- Timer Message Display -->
 <div id="timerMessage">👇This timer reflects the time from your birth to the present day👇</div>
 
-<!-- Timer Display -->
 <div id="timerContainer"></div>
 
 <div id="birthdayContainer">
-  <h1 id="birthdayTitle">Many More Happy Returns of the Day Anna </h1>  
-  <h2 id="birthdayMessage">bro</h2>
+  <h1 id="birthdayTitle">🥳 Many More Happy Returns of the Day  Pavi Akka🥳</h1>  
+  <h2 id="birthdayMessage">Hi</h2>
   <h3 id="birthdayPrompt">If you read this, please touch the screen</h3>
 </div>
+<div id="loveheart">
+  
+    <canvas id="alx"></canvas>
+    <script src="script.js"></script>
+  
+</div>
 
-<div id="wishMessage">I wish you live long, be happy forever, and live your life as you like it. If you read my wishes, please touch the screen twice.</div>
+<div id="wishMessage">I wish you live long, be happy forever, and live your life as you like it. If you read my wishes, please touch the screen one time.</div>
 
 <div id="flowerContainer"></div>
 
-<!-- Video Section (Hidden Initially) -->
 <div id="videoContainer">
   <video autoplay loop muted>
     <source src="your-video-file.mp4" type="video/mp4">
@@ -536,20 +246,17 @@
   </video>
 </div>
 
-<!-- Background Image (Hidden Initially) -->
-<img id="backgroundImage" src="background-image.jpg" alt="Background Image">
+<img id="backgroundImage" src="For you Aji.png" alt="Background Image">
 
-<!-- Goodbye Message (Hidden Initially) -->
-<div id="goodbyeMessage">Happy birthday Anna and goodbye 🫂</div>
+<div id="goodbyeMessage"> 🎉 Happy birthday Akka 🎉 and Goodbye 🫂</div>
 
-<!-- Audio for Background Music -->
 <audio id="birthdaySong">
   <source src="happy birthday to you.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
 
-<!-- Confetti Effect (Hearts) -->
 <script>
+  
   const emojis = ['💗','🩷','🤍','🩶','🖤','🤎','💜','💙','🩵','💚','💛','🧡','❤️','♥️'];
   const numberOfHearts = 100;
   let touchCount = 0;
@@ -568,15 +275,15 @@
       });
     }
   }
+    
 
   function updateTimer() {
-    const birthDate = new Date('2002-11-27T10:15:00');
+    const birthDate = new Date('2000-12-25T11:57:00'); 
     const now = new Date();
-
+    const thisYearBirthday = new Date(now.getFullYear(), birthDate.getMonth(), birthDate.getDate(), birthDate.getHours(), birthDate.getMinutes(), birthDate.getSeconds());
+    const adjustedBirthDate = now < thisYearBirthday ? new Date(now.getFullYear() - 1, birthDate.getMonth(), birthDate.getDate(), birthDate.getHours(), birthDate.getMinutes(), birthDate.getSeconds()) : thisYearBirthday;
     const diff = now - birthDate;
-
-    // Total Time Calculation
-    const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    const accurateYears = now < thisYearBirthday ? now.getFullYear() - birthDate.getFullYear() - 1 : now.getFullYear() - birthDate.getFullYear();
     const totalMonths = Math.floor(diff / (1000 * 60 * 60 * 24 * 30.44));
     const totalDays = Math.floor(diff / (1000 * 60 * 60 * 24));
     const totalHours = Math.floor(diff / (1000 * 60 * 60));
@@ -584,10 +291,11 @@
     const totalSeconds = Math.floor(diff / 1000);
 
     document.getElementById('timerContainer').textContent = 
-      `${years} Years | ${totalMonths} Months | ${totalHours} Hours | ${totalMinutes} Minutes | ${totalSeconds} Seconds`;
-  }
+      `${accurateYears} Years | ${totalMonths} Months | ${totalDays} Days | ${totalHours} Hours | ${totalMinutes} Minutes | ${totalSeconds} Seconds`;
+}
+setInterval(updateTimer, 1000);
 
-  setInterval(updateTimer, 1000);
+updateTimer();
 
   document.body.addEventListener('click', function () {
     touchCount++;
@@ -597,29 +305,36 @@
       document.getElementById('birthdayMessage').classList.add('hidden');
       document.getElementById('birthdayPrompt').classList.add('hidden');
       document.getElementById('timerContainer').classList.add('hidden');
-      document.getElementById('timerMessage').classList.add('hidden');
+      document.getElementById('timerMessage').classList.add('hidden');  
       document.getElementById('wishMessage').style.display = 'block';
       createFlowerAnimation();
     } else if (touchCount === 2) {
+     
       document.getElementById('wishMessage').style.display = 'none';
       document.getElementById('flowerContainer').style.display = 'none';
       document.getElementById('videoContainer').style.display = 'flex';
+      document.getElementById('loveheart').style.display = 'block';
     } else if (touchCount === 3) {
+      
       document.getElementById('videoContainer').style.display = 'none';
       document.getElementById('backgroundImage').style.display = 'block';
+      document.getElementById('loveheart').style.display = 'none';
       const audio = document.getElementById('birthdaySong');
+      
       audio.play();
     } else if (touchCount === 4) {
+      document.getElementById('loveheart').classList.add('block');
       document.getElementById('backgroundImage').style.display = 'none';
+      document.getElementById('loveheart').style.display = 'block';
       document.getElementById('goodbyeMessage').style.display = 'block';
       document.body.addEventListener('click', handleInteraction);
   document.body.addEventListener('touchstart', handleInteraction);
+      
     }
   });
   
 
   createHeartRain();
 </script>
-
 </body>
 </html>
